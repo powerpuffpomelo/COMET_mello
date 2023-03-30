@@ -1,0 +1,28 @@
+class_path: pytorch_lightning.trainer.trainer.Trainer
+init_args:
+  accelerator: gpu
+  devices: 2
+  accumulate_grad_batches: 8
+  amp_backend: native
+  amp_level: null
+  auto_lr_find: True
+  auto_scale_batch_size: True
+  check_val_every_n_epoch: 1
+  default_root_dir: null
+  deterministic: True
+  fast_dev_run: False
+  gradient_clip_val: 1.0
+  gradient_clip_algorithm: norm
+  log_every_n_steps: 10
+  max_epochs: 5
+  min_epochs: 1
+  max_steps: -1
+  min_steps: null
+  num_sanity_val_steps: 10
+  reload_dataloaders_every_n_epochs: 0
+  track_grad_norm: -1
+  val_check_interval: 10
+  enable_model_summary: True
+  move_metrics_to_cpu: True
+  multiple_trainloader_mode: max_size_cycle
+  

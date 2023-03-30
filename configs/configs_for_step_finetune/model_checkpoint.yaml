@@ -1,0 +1,14 @@
+class_path: pytorch_lightning.callbacks.model_checkpoint.ModelCheckpoint
+init_args:
+  dirpath: COMET_mello/checkpoints
+  filename: wmt20-comet-da
+  # monitor: loss
+  verbose: False
+  save_last: False
+  save_top_k: -1
+  mode: max
+  auto_insert_metric_name: True
+  save_weights_only: True
+  #every_n_train_steps: 0
+  every_n_epochs: 1
+  #save_on_train_epoch_end: True
